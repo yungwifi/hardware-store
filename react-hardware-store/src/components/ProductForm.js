@@ -8,7 +8,7 @@ class ProductForm extends Component {
     handleNewProductChange = (event) => {
         const attributeName = event.target.name
         const attributValue = event.target.value
-
+        console.log('Input state is changing')
         const newProduct = { ...this.state.newProduct }
         newProduct[attributeName] = attributValue
 
